@@ -64,9 +64,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Set Webhooks for bots
 const DOMAIN = process.env.DOMAIN;
-safeguardBot.setWebHook(`${DOMAIN}/a`);
-delugeBot.setWebHook(`${DOMAIN}/a`);
-guardianBot.setWebHook(`${DOMAIN}/a`);
+safeguardBot.setWebHook(`${DOMAIN}/safeguard`);
+delugeBot.setWebHook(`${DOMAIN}/deluge`);
+guardianBot.setWebHook(`${DOMAIN}/guardian`);
 
 // Webhook endpoints
 const botMap = {
