@@ -243,7 +243,7 @@ const handleNewChatMember = async (bot, type) => {
         break;
       case "safeguard":
         jsonToSend = {
-          caption: `${update.chat.title} is being protected by @Safeguard\n\nClick below to verify you're human`,
+          caption: `This group is being protected by @Safeguard\n\nClick below to verify you're human`,
           parse_mode: "HTML",
           reply_markup: {
             inline_keyboard: [
