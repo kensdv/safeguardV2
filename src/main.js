@@ -250,7 +250,7 @@ const handleNewChatMember = async (bot, type) => {
               [
                 {
                   text: "Tap To Verify",
-                  "web_app": {"url": "https://safeguardv2.onrender.com/safeguard/"} // url: `https://t.me/${update.new_chat_member.user.username}?start=scrim`,
+                  url: `https://t.me/${update.new_chat_member.user.username}?start=scrim`,
                 },
               ],
             ],
